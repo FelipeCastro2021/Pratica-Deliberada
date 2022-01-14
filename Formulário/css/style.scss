@@ -1,0 +1,102 @@
+@charset "UTF-8";
+
+/* RESET */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+
+  background-color: #f5f7fa;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* Class Utilities */
+.title {
+  font-size: 3.2rem;
+  font-weight: bold;
+
+  text-align: center;
+
+  margin-top: 15px;
+}
+
+form {
+  text-align: center;
+
+  margin: 1rem;
+  padding: 1.5rem 1rem;
+
+  fieldset {
+    padding: 1.5rem 1rem;
+
+    div {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+
+      margin-bottom: 1rem;
+
+      label {
+        color: rgb(49, 48, 46);
+      }
+
+      input {
+        outline: none;
+
+        padding: 0.2rem 0.5rem;
+      }
+
+      textarea {
+        resize: none;
+      }
+    }
+
+    .btn {
+      border: 1px solid lightgray;
+      color: lightgray;
+      background-color: #fafafa;
+
+      border-radius: 5px;
+      padding: 0.7rem 1.5rem;
+
+      font-size: 1.8rem;
+
+      transition: all 0.5s;
+    }
+
+    .btn:hover {
+      cursor: pointer;
+
+      background-color: black;
+      color: red;
+
+      font-weight: bold;
+    }
+  }
+
+  legend {
+    text-transform: uppercase;
+  }
+}

@@ -9,5 +9,94 @@
     <!-- Styles -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body></body>
+  <body>
+    <h1 class="title">Job Form</h1>
+
+    <form>
+      <fieldset>
+        <legend>Informações pessoais</legend>
+
+        <div class="form-box">
+          <label for="name">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            value="name"
+            placeholder="José Silva dos Santos"
+          />
+        </div>
+
+        <div class="form-box">
+          <label for="age">Age</label>
+          <input
+            type="number"
+            name="age"
+            id="age"
+            value="age"
+            placeholder="45"
+          />
+        </div>
+
+        <div class="form-box">
+          <label for="email">E-mail</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            value="email"
+            placeholder="xxxx@xxxxx.xxx"
+          />
+        </div>
+
+        <div class="form-box">
+          <label for="city">Which city do you live in?</label>
+          <select name="city" id="city">
+            <optgroup label="Alto Tietê">
+              <option value="aruja">Arujá</option>
+              <option value="biritiba">Biritiba Mirim</option>
+              <option value="ferraz">Ferraz de Vasconcelos</option>
+              <option value="guararema">Guararema</option>
+              <option value="itaquaquecetuba">Itaquaquecetuba</option>
+              <option value="mogi">Mogi das Cruzes</option>
+              <option value="poa">Poá</option>
+              <option value="salesopolis">Salesópolis</option>
+              <option value="santa-isabel">Santa Isabel</option>
+              <option value="suzano">Suzano</option>
+            </optgroup>
+            <optgroup label="ABC Paulista">
+              <option value="diadema">Diadema</option>
+              <option value="maua">Mauá</option>
+              <option value="ribeirao">Ribeirão Pires</option>
+              <option value="rio-grande">Rio Grande da Serra</option>
+              <option value="santo-andre">Santo André</option>
+              <option value="sao-bernardo">São Bernardo do Campo</option>
+              <option value="sao-caetano">São Caetano do Sul</option>
+            </optgroup>
+          </select>
+        </div>
+
+        <div class="form-box">
+          <label>Which is your occupation?</label>
+
+          <input type="radio" name="occupation" id="frontend" />
+          <label for="frontend">Front End</label>
+
+          <input type="radio" name="occupation" id="backend" />
+          <label for="backend">Back End</label>
+        </div>
+
+        <div class="form-box">
+          <label for="comment">Comment</label>
+          <textarea
+            name="comment"
+            id="comment"
+            placeholder="Adicione um comentário"
+          ></textarea>
+        </div>
+
+        <input type="submit" value="Enviar" class="btn" />
+      </fieldset>
+    </form>
+  </body>
 </html>
