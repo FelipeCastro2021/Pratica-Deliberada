@@ -1,0 +1,332 @@
+/* ! Reset */
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* ! Classes Utilities */
+.container {
+  padding: 0 2%;
+  margin: 0 2.5rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* ! Header */
+#header {
+  height: 5rem;
+
+  background-color: #fafbfc;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  width: 100%;
+  padding: 0.5rem 0;
+}
+
+.logo {
+  width: 50%;
+}
+
+.menu-items {
+  width: 50%;
+  text-align: right;
+}
+
+.menu-items i {
+  font-size: 1.5rem;
+}
+
+/* ! Showcase */
+#showcase {
+  height: calc(100vh - 5rem);
+
+  background: rgba(0, 0, 0, 0.4)
+    url('https://images.unsplash.com/photo-1478186014654-5a7e3898daa5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=388&q=80')
+    no-repeat center center/cover;
+}
+
+.blur {
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+#showcase .container {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+
+  text-align: center;
+
+  height: 100%;
+}
+
+#showcase h1 {
+  font-size: 2.8rem;
+  color: white;
+}
+
+#showcase p {
+  font-size: 0.75rem;
+  line-height: 140%;
+  letter-spacing: 1px;
+  color: rgb(233, 233, 233);
+
+  width: 100%;
+}
+
+/* ! Befefits */
+#benefits {
+  display: flex;
+  flex-wrap: wrap;
+
+  color: #fafbfa;
+
+  margin-top: -120px;
+}
+
+.benefit {
+  width: 100%;
+
+  padding: 2.5rem 1rem;
+}
+
+.benefit h2 {
+  display: inline-block;
+
+  font-size: 1.5rem;
+
+  margin-bottom: 0.6rem;
+
+  position: relative;
+}
+
+.benefit h2::after {
+  content: '';
+  width: 35%;
+  height: 2px;
+
+  position: absolute;
+  bottom: -0.8rem;
+  left: 0;
+
+  background-color: #fafafa;
+}
+
+.benefit p {
+  color: rgba(255, 255, 255, 0.8);
+
+  margin-top: 0.8rem;
+}
+
+.benefit h2 {
+  font-size: 1.2rem;
+}
+
+.benefit.black {
+  background-color: rgb(84, 82, 81);
+}
+
+.benefit.red {
+  background-color: rgb(204, 35, 35);
+}
+
+.benefit.blue {
+  background-color: rgb(37, 37, 189);
+}
+
+/* ! Phrase */
+#phrase {
+  padding: 3.5rem 0;
+
+  background-color: rgb(248, 248, 248);
+}
+
+#phrase h2 {
+  text-transform: uppercase;
+
+  margin-bottom: 1.5rem;
+}
+
+#phrase p {
+  line-height: 140%;
+
+  max-width: 100%;
+  margin-left: 80px;
+
+  position: relative;
+}
+
+#phrase p::before {
+  content: '';
+  width: 60px;
+  height: 5px;
+  border-radius: 5px;
+
+  position: absolute;
+  left: -75px;
+  top: 0.5rem;
+
+  background-color: rgb(204, 35, 35);
+}
+
+/* ! Newsletter */
+#newsletter {
+  background-color: rgb(49, 49, 158);
+
+  padding: 3.5rem 0;
+
+  height: auto;
+}
+
+#newsletter .grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto auto;
+  gap: 0.4rem;
+}
+
+#newsletter .grid div,
+#newsletter .grid img {
+  height: 100%;
+
+  object-fit: cover;
+  filter: contrast(120%) saturate(120%);
+}
+
+#newsletter .grid div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  color: #121212;
+  background-color: #fafafa;
+
+  padding: 0 0.8rem;
+}
+
+#newsletter .grid div > p {
+  margin-top: 0.6rem;
+
+  line-height: 150%;
+  font-size: 0.875rem;
+  color: rgb(136, 136, 136);
+}
+
+#newsletter .grid div:last-of-type {
+  background-color: rgb(169, 46, 46);
+
+  color: #fafafa;
+}
+
+#newsletter .grid div:last-of-type p {
+  color: #e2e2e2;
+}
+
+#newsletter .container div,
+#newsletter .container img {
+  max-width: 100%;
+}
+
+#newsletter .span {
+  grid-row: span 2;
+}
+
+/* ! Choose */
+#choose {
+  padding: 60px 0;
+
+  background-color: rgb(169, 46, 46);
+}
+
+#choose .container .block {
+  background-color: #fafafa;
+
+  display: flex;
+  flex-flow: column wrap;
+
+  padding: 0;
+}
+
+#choose .text {
+  width: 100%;
+
+  padding: 10px;
+}
+
+#choose .image {
+  width: 100%;
+}
+
+#choose .image img {
+  width: 100%;
+  max-height: 450px;
+}
+
+#choose .text h2 {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+
+  margin-bottom: 1.3rem;
+}
+
+#choose .text div {
+  margin: 10px 25px;
+}
+
+#choose .text h3 {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  margin-bottom: 0.6rem;
+}
+
+#choose .text i {
+  font-size: 1.5rem;
+  vertical-align: center;
+
+  display: inline-block;
+}
+
+#choose .text h3 span {
+  vertical-align: center;
+
+  display: inline-block;
+}
+
+#choose .text p {
+  font-size: 0.875rem;
+  color: rgb(153, 153, 153);
+  line-height: 140%;
+}
+
+#choose .image img {
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* ? Responsividade */
+@media screen and (min-width: 1025px) {
+  .container {
+    margin: 0 12.5rem;
+  }
+}
