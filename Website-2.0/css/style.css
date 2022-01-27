@@ -327,6 +327,42 @@ img {
 /* ? Responsividade */
 @media screen and (min-width: 1025px) {
   .container {
-    margin: 0 12.5rem;
+    margin: 0 11.25rem;
+  }
+
+  .benefit {
+    width: calc(100% / 3);
+  }
+
+  #choose .container .block {
+    flex-flow: row wrap;
+  }
+
+  #choose .image img {
+    max-height: none;
+  }
+
+  #choose .text div {
+    margin: 40px 32px;
+  }
+
+  #choose .text i {
+    font-size: 1.8rem;
+  }
+
+  #choose .text h3 span {
+    font-size: 1.35rem;
+  }
+
+  #choose .text p {
+    font-size: 0.925rem;
+  }
+
+  #choose .text {
+    width: 50%;
+  }
+
+  #choose .image {
+    width: 50%;
   }
 }
