@@ -397,6 +397,83 @@ img {
   color: rgb(124, 124, 124);
 }
 
+/* ! Testimonials */
+#testimonials {
+  padding: 50px 0;
+
+  text-align: center;
+}
+
+.testimonials-items {
+  overflow: hidden;
+
+  padding: 40px 0;
+
+  display: block;
+}
+
+.testimonial-item {
+  background-color: #f5f5f5;
+
+  float: left;
+  height: auto;
+  padding: 30px;
+
+  border-radius: 15px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+.testimonial-item p {
+  margin: 15px 0 0;
+
+  color: lightslategray;
+  font-size: 0.875rem;
+}
+
+.slick-slide {
+  margin-left: 20px;
+}
+
+/* TODO Slider */
+.slick-dotted ul {
+  display: block;
+  list-style: none;
+
+  position: relative;
+  top: 10px;
+}
+
+.slick-dotted li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.slick-dotted button:focus {
+  outline: 0;
+}
+
+.slick-dotted li button {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+
+  border: none;
+
+  background-color: #d8d8d8;
+  color: #d8d8d8;
+
+  cursor: pointer;
+}
+
+li.slick-active button {
+  background-color: rgb(62, 36, 174);
+  color: rgb(62, 36, 174);
+}
+
+li.slick-active:focus {
+  outline: none;
+}
+
 /* ! Footer */
 #footer {
   padding-top: 3rem;
