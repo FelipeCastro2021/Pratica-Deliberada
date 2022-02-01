@@ -21,6 +21,34 @@ img {
   max-width: 100%;
 }
 
+.arrow.previous {
+  left: 20px;
+}
+
+.arrow.next {
+  right: 20px;
+}
+
+.arrow {
+  font-size: 1.5rem;
+  color: rgb(218, 218, 218);
+
+  position: fixed;
+  top: 50%;
+
+  animation: 800ms ease-in-out 1s infinite alternate jumping;
+}
+
+@keyframes jumping {
+  from {
+    top: 49%;
+  }
+
+  to {
+    top: 51%;
+  }
+}
+
 /* ! Header */
 #header {
   height: 5rem;
