@@ -1,0 +1,106 @@
+@charset "UTF-8";
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ! Utilities Classes */
+header {
+  padding: 0.5rem 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: darkslategray;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+/* ! Classic Headers */
+.classic {
+  background-color: lightgray;
+}
+
+.classic-header {
+  background-color: white;
+
+  display: flex;
+  align-items: center;
+
+  max-width: 100%;
+}
+
+.menu-items {
+  display: flex;
+}
+
+.menu-item a {
+  padding: 0.5rem;
+}
+
+h3 {
+  text-transform: uppercase;
+}
+
+.classic header + header {
+  margin-top: 1rem;
+}
+
+.btn {
+  background-color: #121212;
+  color: white;
+
+  padding: 0.3rem 0.8rem;
+  border-radius: 3px;
+  font-weight: bold;
+}
+
+/* ! Classic 1 */
+.classic-1 {
+  justify-content: space-between;
+}
+
+/* ! Classic 2 */
+.classic-2 {
+  justify-content: space-between;
+}
+
+.classic-2 .active {
+  font-weight: bold;
+}
+
+/* ! Classic 3 */
+.classic-3 .active {
+  font-weight: bold;
+}
+
+/* ! Classic 4 */
+.classic-4 {
+  justify-content: space-between;
+}
+
+/* ! Classic 5 */
+.classic-5 {
+  justify-content: space-between;
+}
+
+.classic-5 .menu {
+  display: flex;
+}
