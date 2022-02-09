@@ -165,3 +165,83 @@ h3 {
 .modern-5 .menu-items {
   justify-content: center;
 }
+
+/* ! Creative 1 */
+.creative-1 {
+  border-radius: 2rem;
+  padding: 1rem 0.75rem;
+
+  width: min-content;
+}
+
+.creative-1 .menu {
+  display: flex;
+}
+
+.creative-1 .menu {
+  position: relative;
+}
+
+.creative-1 .menu-icons {
+  display: inline-flex;
+  flex-direction: column;
+
+  align-items: center;
+}
+
+.menu-icons .icon-close {
+  display: none;
+}
+
+.creative-1 .menu-icons i {
+  height: 2rem;
+}
+
+.creative-1 .menu-icons i:hover {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.creative-1 .menu-icons i:first-of-type {
+  margin-bottom: 50px;
+}
+
+.creative-1 .menu-items {
+  display: none;
+
+  margin-top: 68px;
+}
+
+.creative-1 .menu-items li {
+  line-height: 200%;
+}
+
+.menu-icons.show i.icon-close {
+  display: inline-block;
+
+  position: absolute;
+  top: 0;
+  right: 0.5rem;
+}
+
+.menu-icons.show .icon-menu {
+  display: none;
+}
+
+.menu-icons.show .icon-menu.icon-close {
+  display: inline-block;
+
+  margin-bottom: 50px;
+}
+
+.creative-1 .menu-items.show {
+  display: flex;
+  flex-direction: column;
+}
+
+.creative-1 i {
+  font-size: 1.5rem;
+}
+
+.creative-1:hover {
+  cursor: pointer;
+}
