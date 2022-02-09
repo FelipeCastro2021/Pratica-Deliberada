@@ -126,7 +126,25 @@ img {
 
   color: #fafbfa;
 
-  margin-top: -120px;
+  margin-top: -12%;
+}
+#benefits .container > .benefit-block {
+  position: relative;
+
+  z-index: 1;
+}
+
+#benefits .container > .benefit-block::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+
+  background-color: rgb(204, 35, 35);
+
+  position: absolute;
+  top: -6%;
+  left: -4%;
+  z-index: -1;
 }
 
 .benefit {
@@ -330,6 +348,8 @@ img {
 #choose .text i {
   font-size: 1.5rem;
   vertical-align: center;
+
+  color: rgb(204, 35, 35);
 
   display: inline-block;
 }
@@ -589,13 +609,26 @@ li.slick-active:focus {
 }
 
 /* ? Responsividade */
-@media screen and (min-width: 1025px) {
-  .container {
-    margin: 0 11.25rem;
+@media screen and (min-width: 1024px) {
+  /* ! Showcase */
+  #showcase {
+    height: calc(40vh - 5rem);
   }
 
-  .benefit {
-    width: calc(100% / 3);
+  #showcase .container,
+  .container {
+    margin: 0 8rem;
+  }
+
+  #benefits .container {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 1rem;
+  }
+
+  #benefits .container > div {
+    width: calc(100% / 3 - 1rem);
   }
 
   #choose .container .block {
