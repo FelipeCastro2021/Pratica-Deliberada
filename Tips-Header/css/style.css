@@ -33,12 +33,20 @@ h2 {
   text-align: center;
 }
 
+h2 {
+  text-transform: uppercase;
+}
+
 /* ! Classic Headers */
-.classic {
+.classic,
+.modern,
+.creative {
   background-color: lightgray;
 }
 
-.classic-header {
+.classic-header,
+.modern-header,
+.creative-header {
   background-color: white;
 
   display: flex;
@@ -59,7 +67,9 @@ h3 {
   text-transform: uppercase;
 }
 
-.classic header + header {
+.classic header + header,
+.modern header + header,
+.creative header + header {
   margin-top: 1rem;
 }
 
@@ -103,4 +113,55 @@ h3 {
 
 .classic-5 .menu {
   display: flex;
+}
+
+/* ! Modern 1 */
+.modern-1 {
+  justify-content: center;
+}
+
+.modern-1 .menu-items {
+  align-items: center;
+}
+
+/* ! Modern 2 */
+.modern-2 .menu {
+  width: 100%;
+}
+
+.modern-2 .menu-items {
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ! Modern 3 */
+.modern-3 .menu {
+  width: 100%;
+}
+
+.modern-3 .menu-items {
+  align-items: center;
+  justify-content: center;
+}
+
+/* ! Modern 4 */
+.modern-4 .menu {
+  width: 100%;
+}
+
+.modern-4 .menu-items {
+  justify-content: center;
+}
+
+/* ! Modern 5 */
+.modern-5 {
+  flex-direction: column;
+}
+
+.modern-5 .menu {
+  width: 100%;
+}
+
+.modern-5 .menu-items {
+  justify-content: center;
 }
