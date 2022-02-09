@@ -612,7 +612,7 @@ li.slick-active:focus {
 @media screen and (min-width: 1024px) {
   /* ! Showcase */
   #showcase {
-    height: calc(40vh - 5rem);
+    height: 70vh;
   }
 
   #showcase .container,
