@@ -1,0 +1,145 @@
+@charset "UTF-8";
+
+/* ! Benefits */
+#benefits {
+  position: relative;
+
+  margin-bottom: 65px;
+}
+
+#benefits::after {
+  content: '';
+  width: 4px;
+  height: 60px;
+
+  background-color: rgb(204, 35, 35);
+
+  position: absolute;
+  bottom: -70px;
+  left: 45%;
+}
+
+.benefit {
+  position: relative;
+}
+
+#benefits .container > .benefit-block-black {
+  position: relative;
+
+  z-index: 1;
+}
+
+#benefits .container > .benefit-block-black::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+
+  background-color: rgb(204, 35, 35);
+
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  z-index: -1;
+}
+
+#benefits .container > .benefit-block-blue {
+  position: relative;
+
+  z-index: 1;
+}
+
+#benefits .container > .benefit-block-blue::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+
+  background-color: rgb(218, 218, 218);
+
+  position: absolute;
+  bottom: -20px;
+  right: -20px;
+  z-index: -1;
+}
+
+.benefit.red {
+  background-color: rgb(204, 35, 35);
+}
+
+.benefit.blue {
+  background-color: rgb(37, 37, 189);
+}
+
+/* ! Phrase */
+#phrase {
+  padding-bottom: 20%;
+}
+
+#phrase .container {
+  padding: 0 6%;
+}
+
+/* ! Newsletter */
+#newsletter .container {
+  margin-top: -20%;
+}
+
+#newsletter .container {
+  position: relative;
+
+  z-index: 1;
+}
+
+#newsletter .container::before {
+  content: '';
+  width: 50%;
+  height: 50%;
+
+  background-color: black;
+
+  position: absolute;
+  bottom: -10px;
+  left: -5px;
+}
+
+#newsletter .container::after {
+  content: '';
+  width: 50%;
+  height: 50%;
+
+  background-color: rgb(204, 35, 35);
+
+  position: absolute;
+  top: -10px;
+  right: -5px;
+  z-index: -1;
+}
+
+/* ! Choose */
+#choose {
+  background-color: white;
+
+  position: relative;
+  z-index: 0;
+}
+
+#choose::before {
+  content: '';
+  width: 75%;
+  height: 100%;
+
+  background-color: rgb(204, 35, 35);
+
+  position: absolute;
+  bottom: -68%;
+  right: 0;
+  z-index: -1;
+}
+
+#choose .image {
+  max-height: 50rem;
+}
+
+/* ! Gallery */
+#gallery {
+  z-index: 0;
+}
