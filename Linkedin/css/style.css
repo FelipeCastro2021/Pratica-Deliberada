@@ -1,0 +1,104 @@
+@charset "UTF-8";
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font: 400 1rem/100% sans-serif;
+
+  background: url('https://www.follow-us.eu/wp-content/uploads/2018/11/background-linkedin-follow-us-v0.1-1200x417.jpg')
+    no-repeat center center/cover;
+
+  height: 100vh;
+  padding: 0 1rem;
+
+  display: grid;
+  place-content: center;
+}
+
+/* ! Utilities Classes */
+img {
+  max-width: 100%;
+  width: 1.8rem;
+  height: auto;
+
+  margin-left: 0.125rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ! Main */
+main {
+  width: 75vw;
+  max-width: 40rem;
+  min-width: 18rem;
+  margin: 0 auto;
+  padding: 1.5rem;
+
+  background: rgba(255, 255, 255, 0.85);
+}
+
+main h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-bottom: 1rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+form input {
+  outline: 0;
+
+  height: 1.8rem;
+
+  padding-left: 0.6rem;
+  border: 2px solid lightgray;
+
+  font-size: 0.85rem;
+}
+
+form input:focus {
+  outline: 0;
+}
+
+form input[type='submit']:hover {
+  cursor: pointer;
+
+  color: white;
+  font-weight: bold;
+}
+
+form input[type='submit'] {
+  height: 2.5rem;
+
+  background: linear-gradient(to bottom, #1c4c79, #457bae);
+}
+
+.information-account {
+  margin-top: 1.5rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.information-account a {
+  color: #356b9c;
+}
