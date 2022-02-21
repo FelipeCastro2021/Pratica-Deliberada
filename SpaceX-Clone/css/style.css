@@ -1,0 +1,126 @@
+@charset "UTF-8";
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Classes Utilities */
+.container {
+  width: min(95%, 128rem);
+  margin: 0 auto;
+}
+
+ul {
+  list-style: none;
+}
+
+.btn {
+  border: 3px solid white;
+
+  padding: 2rem 5rem;
+
+  font-size: 1.4rem;
+  color: white;
+
+  transition: color 1s cubic-bezier(0.25, 1, 0.25, 1),
+    background-color 1s cubic-bezier(0.25, 1, 0.25, 1);
+}
+
+.btn:hover {
+  background-color: white;
+  color: black;
+}
+
+/* Showcase */
+#showcase {
+  min-height: 100%;
+  width: 100%;
+  background: rgba(20, 20, 20, 0.6)
+    url('https://passageirodeprimeira.com/wp-content/uploads/2021/03/passageirodeprimeira.com-spacex-quer-usar-rede-de-satelites-para-fornecer-internet-a-aeronaves-screen-shot-2021-03-24-at-10.57.33-am-1024x577.png')
+    no-repeat center center/cover;
+  background-blend-mode: color;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-menu {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  margin-right: 2.5rem;
+}
+
+.logo img {
+  width: 25rem;
+}
+
+.menu-1 {
+  display: flex;
+}
+
+.menu-1 li + li {
+  margin-left: 2rem;
+}
+
+.menu-1 li a {
+  color: white;
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: -0.1rem;
+}
+
+.menu-2 {
+  display: flex;
+  align-items: center;
+}
+
+.menu-2 li a {
+  text-transform: uppercase;
+  color: white;
+}
+
+/* Title */
+.title {
+  text-align: left;
+  margin-top: 30rem;
+
+  text-transform: uppercase;
+  color: white;
+}
+
+.title p {
+  font-size: 2rem;
+}
+
+.title h1 {
+  font-size: 4.8rem;
+
+  margin: 0.8rem 0 4rem;
+}
