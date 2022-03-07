@@ -36,7 +36,7 @@ a {
 
 /* ! Main */
 main {
-  width: 75vw;
+  width: min(35rem, 85vw);
   max-width: 40rem;
   min-width: 18rem;
   margin: 0 auto;
@@ -65,12 +65,11 @@ form {
 form input {
   outline: 0;
 
-  height: 1.8rem;
+  height: 2.5rem;
 
   padding-left: 0.6rem;
   border: 2px solid lightgray;
-
-  font-size: 0.85rem;
+  border-radius: 5px;
 }
 
 form input:focus {
